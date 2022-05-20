@@ -1,0 +1,31 @@
+{
+  "name": "adsblock-detector",
+  "version": "1.0.6",
+  "description": "the Ad Block Detector is help to detect ads block active or not in user browser",
+  "main": "./dist/build.js",
+  "type": "module",
+  "scripts": {
+    "build": "npx swc ./detector.js  -o dist/build.js"
+  },
+  "license": "ISC",
+  "files": [
+    "dist/*"
+  ],
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.186"
+  },
+  "keywords":[
+    "adsblocker detector, adsblocker, "
+  ],
+  "author": {
+    "name" : "Rajdeep Singh",
+    "email" : "officialrajdeepsingh@gmail.com",
+    "url" : "https://officialrajdeepsingh.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/officialrajdeepsingh/adsblock-detector.git"
+  }
+}
+
