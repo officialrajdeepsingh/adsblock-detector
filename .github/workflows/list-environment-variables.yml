@@ -1,8 +1,9 @@
 
 name: Environment Variables List
-on:
-  push:
-    branches: [ change-to-master-or-main ]
+on: 
+    push:
+         branches:
+           - main
 jobs:
 
   github-actions-environment-variables-ubuntu:
