@@ -1,6 +1,9 @@
 name: "🚀 release"
 
-on:  [push]
+on: 
+    push:
+         branches:
+           - main
 
 jobs:
     release:
@@ -16,6 +19,5 @@ jobs:
                   registry-url: https://registry.npmjs.org
             - name: 🚀 publish
               run: npm publish --access public
-              working-directory: adsblock-detector
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
