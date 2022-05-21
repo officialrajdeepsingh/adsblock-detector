@@ -1,4 +1,4 @@
-name: "🚀 release"
+name: release
 
 on: 
     push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
     release:
-        name: 🚀 release
+        name: release
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
@@ -17,7 +17,7 @@ jobs:
               with:
                   node-version: 16
                   registry-url: https://registry.npmjs.org
-            - name: 🚀 publish
-              run: npm publish --access public
+            - name: publish
+              run: npm publish
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
