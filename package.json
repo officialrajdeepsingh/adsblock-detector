@@ -1,6 +1,6 @@
 {
   "name": "adsblock-detector",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "the Ad Block Detector is help to detect ads block active or not in user browser",
   "main": "./dist/build.js",
   "type": "module",

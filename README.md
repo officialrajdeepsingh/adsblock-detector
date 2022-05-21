@@ -7,7 +7,7 @@ Ads Block Detector only work for Google Adsense.
 ## How to use Ads Block Detector?
 You can use an ads block detector with NPM and CDN.
 
-### NPM
+## NPM
 ```javascript
         import adsblock from './node_modules/adsblock-detector/dist/build.js';
             or 
@@ -20,10 +20,10 @@ You can use an ads block detector with NPM and CDN.
 
 ```
 
-### CDN
+## CDN
  You can copy lalest version of ads block detector CDN link: `https://unpkg.com/adsblock-detector`
 
-
+#### Example 1
 ```html
 
     <script type="module" src="https://unpkg.com/adsblock-detector@1.0.4/dist/build.js">
@@ -38,6 +38,23 @@ You can use an ads block detector with NPM and CDN.
         console.log(ads.total())
         console.log(ads.check())
     </script>
+```
+
+#### Example 2
+
+```cmd
+<script type="module">
+ 
+     import adsDetector from "https://unpkg.com/adsblock-detector@1.0.3/dist/build.js"
+        
+     
+        let adsBlockDetector = new adsDetector()
+
+         console.log(adsBlockDetector.total())
+         console.log(adsBlockDetector.check())
+
+</script>
+
 ```
 
 ## Inbuilt functions
