@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: List of the GitHub Actions 
         run: ${{ secrets.NPM_AUTH_TOKEN.NPM_AUTH_TOKEN }}
+      - name: GitHub Actions 
+        run: env
