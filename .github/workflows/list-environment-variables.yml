@@ -10,6 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: List of the GitHub Actions 
-        run: ${{env.NPM_AUTH_TOKEN}}
-      - name:  variables on Windows
-        run: env.NPM_AUTH_TOKEN 
+        run: ${{ secrets.NPM_AUTH_TOKEN }}
