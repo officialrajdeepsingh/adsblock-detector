@@ -1,10 +1,11 @@
-name: "🚀 release"
+name: "manual-action"
 
-on:  [push]
+on:
+    Workflow_dispatch
 
 jobs:
     release:
-        name: 🚀 release
+        name: manual-action
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
